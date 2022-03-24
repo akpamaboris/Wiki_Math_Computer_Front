@@ -65,7 +65,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/getinitialknowledge"
+          "https://wiki-math-computer.herokuapp.com/getinitialknowledge"
         );
         // console.log(response.data);
         setData(response.data);
@@ -82,7 +82,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await axios.post(
-          `http://localhost:8000/specificKnowledge?name=${inputText}`
+          `https://wiki-math-computer.herokuapp.com/specificKnowledge?name=${inputText}`
         );
         // console.log(response.data);
         setSearchResult(response.data);
